@@ -1,0 +1,199 @@
+#listaPatrocinadores{
+    list-style-type: none;
+    padding-left: 0;
+}
+#listaPatrocinadores > li{
+    font-size: larger;
+}
+#listaPatrocinadores > li::before{
+    margin-right: 8px;
+}
+
+.dosPinosLink a{
+    color: green;
+    text-decoration: none;
+}
+.dosPinosLink::before{
+    content: "🌲";
+}
+
+
+.microsoftLink a{
+    color:red;
+    text-decoration: none;
+}
+.microsoftLink::before{
+    content: "🖥️";
+}
+
+
+.toyotaLink a{
+    color: grey;
+    text-decoration: none;
+}
+.toyotaLink::before{
+    content: "🚗";
+}
+
+
+.accentureLink a{
+    color: blueviolet;
+    text-decoration: none;
+}
+.accentureLink::before{
+    content: "🫧";
+}
+#formularioInscripcion{
+    width: 800px;
+    background-color:cornflowerblue;
+    border: 5px solid #020D38;
+    padding: 20px;
+    display: inline-grid;
+    grid-template-columns: 150px 500px;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+}
+
+#formularioInscripcion h2{grid-column: span 2;}
+#formularioInscripcion p{grid-column: span 2; font-size: larger;}
+
+#formularioInscripcion button:hover{
+    background-color: rgb(0, 29, 43);
+    color:white;
+}
+#formularioInscripcion button:active{
+    background-color: green;
+}
+
+
+button{
+    width: 467px;
+}
+
+#formularioInscripcion button{grid-column: span 2; height: 50px;}
+
+
+input[type="text"]{
+    width: 300px;
+    background-color: rgb(150, 147, 145);
+    border: 2px inset rgb(0, 0, 92);
+}
+input[type="text"]:focus{
+    background-color: white;
+}
+
+input[type="email"]{
+    width: 300px;
+    background-color: rgb(150, 147, 145);
+    border: 2px inset rgb(0, 0, 92);
+}
+input[type="email"]:focus{
+    background-color: white;
+}
+img[alt]{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un fondo blanco"]{
+    height: 300px;
+    width: 260px;
+    margin-right: 70px;
+}
+
+.tabla{
+    border-style:ridge;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+.tabla thead tr th{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkgreen;
+    color: white;
+}
+.tabla tbody tr:hover td{
+    background-color: darkblue;
+    color: white;
+}
+.tabla tbody tr td{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:lightcyan;
+}
+
+
+.listaSecciones{
+    list-style-type: none;
+    margin-top: 100px;
+}
+
+.seccionIngenieria a{
+    color: #020D38;
+    text-decoration: none;
+}
+.seccionIngenieria::before{
+    content: "👨‍🔬";
+}
+
+
+.seccionAgenda a{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+.seccionAgenda::before{
+    content: "📅";
+}
+
+.seccionFormulario a{
+    color: mediumslateblue;
+    text-decoration: none;
+
+}
+.seccionFormulario::before{
+    content: "📃";
+}
+
+.seccionUbicacion a{
+    color:indigo;
+    text-decoration: none;
+}
+.seccionUbicacion::before{
+    content: "📍";
+}
+
+
+.seccionPatrocinadores a{
+    color:black;
+    text-decoration: none;
+}
+.seccionPatrocinadores::before{
+    content: "💵";
+}
+
+#menuNavegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    width: 850px;
+    position:relative;
+}
+#ingenierias{
+    box-sizing: border-box;
+    height: 800px;
+    width: 850px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+#parrafoAbsolute{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
