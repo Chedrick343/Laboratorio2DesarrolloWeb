@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/components.css">
+        <link rel="stylesheet" href="styles/overrides.css">
         <title>Evento Super-Tecnológico</title>
     </head>
     <body>
         <header>¡Desarrolla tu potencial en este gran Evento!</header>
         <h1>Evento de proyectos de ingeniería TEC</h1>
-        <nav>
-            <p>
-                Te mostramos una pequeña lista de los contenidos, si  quieres ir a algúna parte de la página sólo <br>
-                presiona sobre el título de la sección.
+        <nav id="menuNavegacion">
+            <p id="parrafoAbsolute">
+                <b>Te mostramos una pequeña lista de los contenidos, si  quieres ir a algúna parte de la página sólo <br>
+                presiona sobre el título de la sección.</b>
             </p>
-            <ul>
-                <li><a href="#ingenierias">Ingenierias</a></li>
-                <li><a href="#agenda">Agenda</a></li>
-                <li><a href="#formulario de inscripcion">Formulario inscripción a la competición de softoware</a></li>
-                <li><a href="#ubicacion">Ubicación del evento</a></li>
-                <li><a href="#patrocinadores">Nuestros patrocinadores</a></li>
+            <ul class="listaSecciones">
+                <li class="seccionIngenieria"><a href="#ingenierias">Ingenierias</a></li>
+                <li class="seccionAgenda"><a href="#agenda">Agenda</a></li>
+                <li class="seccionFormulario"><a href="#formulario de inscripcion">Formulario inscripción a la competición de softoware</a></li>
+                <li class="seccionUbicacion"><a href="#ubicacion">Ubicación del evento</a></li>
+                <li class="seccionPatrocinadores"><a href="#patrocinadores">Nuestros patrocinadores</a></li>
             </ul>
         </nav>
         <section id="ingenierias" aria-label="La sección siguiente encapsula las ingenierías que estarán involucradas en el evento">
@@ -71,7 +75,7 @@
                 A continuación mostramos una tabla con la agenda del evento, las actividades que <br>
                 y la hora en la que se llevarán a cabo.
             </p>
-            <table border="2" tabindex="0">
+            <table class="tabla" style="box-shadow: 3px 3px 10px rgba(0,0,0,0.3);" border="2" tabindex="0">
                 <thead>
                     <tr>
                         <th>Actividad</th>
@@ -126,7 +130,7 @@
                 </tbody>
             </table>
         </section>
-        <form id="formulario de inscripcion" action="" aria-label="Este es un formulario para aquellos aspirantes a programadores que deseen participar en el evento de programación.">
+        <form id="formularioInscripcion" action="" aria-label="Este es un formulario para aquellos aspirantes a programadores que deseen participar en el evento de programación.">
             <h2>¡Información importante para los competidores de programación!</h2>
                 <p>
                     Todos aquellos que deseen participar en la competencia de programación deberán <br>
@@ -161,11 +165,11 @@
                 colaboran con los proyectos ingenieriles y científicos como el que estaremos a punto de desarrollar.
                 A continuación se presenta una lista de todos los patrocinadores de este evento.
             </p>
-            <ul aria-label="Lista de patrocinadores del evento super tecnológico">
-                <li><a href="https://www.cooperativadospinos.com/" target="_blank" rel="noopener noreferrer">Dos pinos</a></li>
-                <li><a href="https://www.microsoft.com/es-es" target="_blank" rel="noopener noreferrer">Microsoft</a></li>
-                <li><a href="https://www.toyotacr.com/" target="_blank" rel="noopener noreferrer">Toyota</a></li>
-                <li><a href="https://www.accenture.com/cr-en" target="_blank" rel="noopener noreferrer">Accenture</a></li>
+            <ul id="listaPatrocinadores" aria-label="Lista de patrocinadores del evento super tecnológico">
+                <li class="dosPinosLink"><a href="https://www.cooperativadospinos.com/" target="_blank" rel="noopener noreferrer">Dos pinos</a></li>
+                <li class="microsoftLink"><a href="https://www.microsoft.com/es-es" target="_blank" rel="noopener noreferrer">Microsoft</a></li>
+                <li class="toyotaLink"><a href="https://www.toyotacr.com/" target="_blank" rel="noopener noreferrer">Toyota</a></li>
+                <li class="accentureLink"><a href="https://www.accenture.com/cr-en" target="_blank" rel="noopener noreferrer">Accenture</a></li>
             </ul>
             <p>
                 De nuevo agradecemos a nuestros patrocinadores, con cada aporte, construyen un mejor futuro para nuestro país.
