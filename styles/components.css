@@ -44,19 +44,21 @@
     content: "🫧";
 }
 #formularioInscripcion{
-    width: 800px;
+    width: 90%;
+    height: auto;
     background-color:cornflowerblue;
     border: 5px solid #020D38;
     padding: 20px;
     display: inline-grid;
-    grid-template-columns: 150px 500px;
+    grid-template-columns:150px 1fr;
     gap: 10px;
-    margin-bottom: 30px;
-    margin-left: 300px;
+    margin-bottom: 10%;
+    margin-left: 2%;
 }
 
+
 #formularioInscripcion h2{grid-column: span 2;}
-#formularioInscripcion p{grid-column: span 2; font-size: larger;}
+#formularioInscripcion p{grid-column: span 2; font-size: 100%;}
 
 #formularioInscripcion button:hover{
     background-color: rgb(0, 29, 43);
@@ -68,14 +70,14 @@
 
 
 button{
-    width: 467px;
+    width: 90%;
 }
 
 #formularioInscripcion button{grid-column: span 2; height: 50px;}
 
 
 input[type="text"]{
-    width: 300px;
+    width: 80%;
     background-color: rgb(150, 147, 145);
     border: 2px inset rgb(0, 0, 92);
 }
@@ -84,7 +86,7 @@ input[type="text"]:focus{
 }
 
 input[type="email"]{
-    width: 300px;
+    width: 80%;
     background-color: rgb(150, 147, 145);
     border: 2px inset rgb(0, 0, 92);
 }
@@ -92,13 +94,15 @@ input[type="email"]:focus{
     background-color: white;
 }
 img[alt]{
+    height: auto;
+    max-width: 100%;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
 img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un fondo blanco"]{
-    height: 300px;
-    width: 260px;
+    height: auto;
+    max-width: 100%;
     margin-right: 70px;
 }
 
@@ -125,9 +129,12 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
 
 .listaSecciones{
     list-style-type: none;
-    margin-top: 100px;
+    
 }
-
+.listaSecciones li{
+    margin-top: 5%;
+    
+}
 .seccionIngenieria a{
     color: #020D38;
     text-decoration: none;
@@ -178,22 +185,47 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2px;
+    margin-left: 1%;
     padding: 12px 16px;
     box-sizing: border-box;
     margin-bottom: 30px;
-    width: 850px;
-    position:relative;
+    width: 100%;
 }
 #ingenierias{
     box-sizing: border-box;
     height: 800px;
-    width: 850px;
+    width: 100%;
     overflow: auto;
-    margin-top: 20px;
 }
 
-#parrafoAbsolute{
-    position: absolute;
-    top: 10px;
-    left: 70px;
+@media (min-width: 768px){
+    #parrafoAbsolute{
+        margin-left: 5%;
+    }
+    .listaSecciones li{
+        margin-top: 15%;
+
+    }
+    #formularioInscripcion{
+        height: auto;
+        width: 90%;
+        margin-left: 2%;
+    }
+    #menuNavegacion{
+        align-self: stretch;
+        padding: 0%;
+    }
+    .tabla{
+        max-width: 100%;
+        height: auto;
+    }
+    #ingenierias{
+        align-self: stretch;
+    }
+}
+@media (min-width: 1024px){
+    #formularioInscripcion{
+        height: auto;
+        width: 88%;
+    }
 }
