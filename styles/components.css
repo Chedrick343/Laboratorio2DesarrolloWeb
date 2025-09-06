@@ -198,7 +198,12 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
     overflow: auto;
 }
 
-@media (min-width: 768px){
+@media (min-width: 800px){
+    .hero{
+        display: flex;
+        grid-column: span 2;
+        justify-content: center;
+    }
     #parrafoAbsolute{
         margin-left: 5%;
     }
@@ -227,5 +232,10 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
     #formularioInscripcion{
         height: auto;
         width: 88%;
+    }
+    .hero{
+        display: flex;
+        grid-column: span 3;
+        justify-content: center;
     }
 }
