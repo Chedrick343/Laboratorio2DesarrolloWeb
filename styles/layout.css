@@ -72,11 +72,12 @@ header + h1{
     header{
         grid-column: span 2;
     }
-    h1{
+    #titulo1{
+        font-size:30px;
         grid-column: span 2;
         width: 100%;
         height: auto;
-        padding: 50px;
+        padding: 20px;
         box-sizing: border-box;
     }
 }
@@ -89,11 +90,12 @@ header + h1{
     header{
         grid-column: span 3;
     }
-    h1{
+    #titulo1{
         grid-column: span 3;
+        font-size:30px;
         width: 100%;
         height: auto;
-        padding: 100px;
+        padding: 20px;
         box-sizing: border-box;
     }
 }
