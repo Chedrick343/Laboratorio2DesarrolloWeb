@@ -5,9 +5,11 @@ html{
     background-position: center;
     background-attachment: fixed;
 }
-body{
+@media (max-width: 500px){
+    body{
         display: grid;
         grid-template-columns: 1fr;
+    }
 }
 @media (min-width: 768px){
     body{
