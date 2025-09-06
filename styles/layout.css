@@ -51,13 +51,18 @@ header{
 }
 header + h1{
     text-align: center;
-    width: 100%;
+    font-size: larger;
+    width: 90%;
     height: 20%;
     border: 5px solid #020D38;
     margin-left: 0%;
+    padding: 20px;
     display: inline-block;
     background-color: lightblue;
 }
+
+
+
 @media (min-width: 768px){
     section{
         height: auto;
