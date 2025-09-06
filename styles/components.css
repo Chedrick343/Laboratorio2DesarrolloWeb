@@ -184,9 +184,7 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2px;
-    margin-left: 1%;
-    padding: 12px 16px;
+    margin-left: 0%;
     box-sizing: border-box;
     margin-bottom: 30px;
     width: 100%;
