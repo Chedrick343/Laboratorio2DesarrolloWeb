@@ -8,6 +8,12 @@
 #listaPatrocinadores > li::before{
     margin-right: 8px;
 }
+.imagenDecorativa{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    display: none;
+}
 
 #botonHamburguesaMovil{
     color: white;
@@ -215,7 +221,19 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
     overflow: auto;
 }
 
-@media (min-width: 800px){
+@media (min-width: 768px){
+    #imagenDecorativa1{
+        width: 20%;
+        height: 20%;
+        right: 1rem;
+    }
+    #imagenDecorativa2{
+        width: 20%;
+        height: 20%;
+    }
+    .imagenDecorativa{
+        display: inline;
+    }
     .hero{
         display: flex;
         grid-column: span 2;
@@ -246,6 +264,9 @@ img[alt="Cristiano ronaldo con traje y corbata sentado en una banca fina con un 
     }
 }
 @media (min-width: 1024px){
+    .imagenDecorativa{
+        display: inline;
+    }
     #formularioInscripcion{
         height: auto;
         width: 88%;
