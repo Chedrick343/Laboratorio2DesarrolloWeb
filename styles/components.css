@@ -9,6 +9,20 @@
     margin-right: 8px;
 }
 
+#botonHamburguesaMovil{
+    color: white;
+    background-color: #020D38;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+}
+#botonHamburguesaMovil:hover{
+    background-color:white;
+    color: black
+
+}
+
 .dosPinosLink a{
     color: green;
     text-decoration: none;
