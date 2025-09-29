@@ -4,6 +4,8 @@ html{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    /*ESTO ES UN COMENTARIO*/
 }
 @media (max-width: 480px){
     body{
